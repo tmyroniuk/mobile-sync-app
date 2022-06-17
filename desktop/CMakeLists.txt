@@ -14,7 +14,11 @@ qt_add_executable(appdesktop
 qt_add_qml_module(appdesktop
     URI desktop
     VERSION 1.0
-    QML_FILES main.qml 
+    QML_FILES
+        main.qml
+        NotificationWindow.qml
+        TrayControll.qml
+
 )
 
 set_target_properties(appdesktop PROPERTIES
